@@ -13,6 +13,8 @@ public interface BoardDAO {
 	List<BoardVO> selectTest();
 
 	int insertTest(BoardVO boardVO);
+	
+	public Integer insertTest2(BoardVO boardVO);
 
 	
 	

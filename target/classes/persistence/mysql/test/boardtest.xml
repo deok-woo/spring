@@ -9,7 +9,7 @@
 </select>
 
 <insert id="insertTest" parameterType="co.kr.swempire.test.vo.BoardVO">
-	insert into board (id,pw,user_name,title,board_context) 
+	insert into board (id ,pw, user_name, title, board_context) 
 	values(
 	#{id},
 	#{pw},
@@ -18,6 +18,20 @@
 	#{board_context}
 	)
 </insert>
+
+<select id="insertTest2" resultType="int">
+
+	insert into board (id ,pw, user_name, title, board_context) 
+	values(
+	#{id},
+	#{pw},
+	#{user_name},
+	#{title},
+	#{board_context}
+	)
+
+</select>
+
 
 
 </mapper>

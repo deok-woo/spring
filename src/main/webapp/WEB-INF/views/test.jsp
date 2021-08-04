@@ -11,25 +11,26 @@
 	<div>
 		<div>
 			<c:forEach var="test" items="${testList}">
-				<p> num : ${test.board_num}</p> 
-     			<p>id : ${test.id}</p>
-     			<p>pw : ${test.pw}</p>
-     			<p>user_name : ${test.user_name}</p>
-     			<p>title : ${test.title}</p>
-     			<p>board_context : ${test.board_context}</p>
+			<div>${testList}</div>
 			</c:forEach>
 		</div>
-
-		<form action="${pageContext.request.contextPath}/insertTest">
-			<div>id: <input name="id"></div>
-			<div>pw: <input name="pw"></div>
-			<div>user_name: <input name="user_name"></div>
-			<div>title: <input name="title"></div>
-			<div>board_context: <input name="board_context"></div>
-			<button>저장</button>
-			<div>${testList}</div>
-			<div>${test}</div>
-		</form>
+		<button type="button" onclick="GoInsert()">등록</button>
 	</div>
 </body>
+
+<script type="text/javascript">
+
+function GoInsert(){
+	
+	console.log("이동");
+	location.href = "/swempire/CRUD/insert"
+	
+	
+}
+
+
+
+
+</script>
+
 </html>

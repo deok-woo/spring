@@ -32,6 +32,11 @@ public class BoardService {
 		System.out.println("count="+count);
 		return count;
 	}
+	
+	public Integer insertTest2(BoardVO boardvo) {
+		
+		return boardDAO.insertTest2(boardvo);
+	}
 
 	
 
