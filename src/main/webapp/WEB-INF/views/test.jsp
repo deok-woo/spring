@@ -3,6 +3,8 @@
  <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
+<script src="${pageContext.request.contextPath}/resources/js1/jquery-3.5.1.min.js"></script>
+<script src="${pageContext.request.contextPath}/resources/js1/common.js"></script>
 <head>
 <meta charset="EUC-KR">
 <title>Insert title here</title>

@@ -19,18 +19,30 @@
 	)
 </insert>
 
-<select id="insertTest2" resultType="int">
 
-	insert into board (id ,pw, user_name, title, board_context) 
-	values(
-	#{id},
-	#{pw},
-	#{user_name},
-	#{title},
-	#{board_context}
-	)
 
-</select>
+
+<select id="insertData" parameterType="co.kr.swempire.test.vo.BoardVO">
+		insert into
+		board (
+		id,
+		pw,
+		user_name,
+		title,
+		board_context,
+		cre_date
+		)
+		values
+		(
+		#{id},
+		#{pw},
+		#{title},
+		#{user_name},
+		#{board_context},
+		NOW()
+		)
+
+	</select>
 
 
 

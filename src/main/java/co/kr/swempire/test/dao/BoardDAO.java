@@ -15,6 +15,8 @@ public interface BoardDAO {
 	int insertTest(BoardVO boardVO);
 	
 	public Integer insertTest2(BoardVO boardVO);
+	
+	public Integer insertData(BoardVO vo);
 
 	
 	

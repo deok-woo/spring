@@ -1,0 +1,17 @@
+@charset "utf-8";
+
+/* Popup */
+.popArea{display:none;}
+
+/* Loading */
+.loading{position:absolute; top:50%; left:50%; /*background:url('../images/bg_transparent.png');*/ margin-top:-20px; margin-left:-20px; z-index:2;}
+
+/* 말줄임 */
+.elipsis{white-space:nowrap; text-overflow:ellipsis; overflow:hidden;}
+
+/* 로딩 */
+.mask{display:none; position:absolute; top:0; left:0; background:#000; opacity:.5; filter:alpha(opacity=50); z-index:9000;}
+.loading{width:41px; height:41px; z-index:100;}
+
+.m-nt-close{display:block; width:27px; height:27px; background:url('../images/button/btn_m_close.png') 0 0 no-repeat #f5f8fa; cursor:pointer;}
+.m-nt-close em{visibility:hidden;}

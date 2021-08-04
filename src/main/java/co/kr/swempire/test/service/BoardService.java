@@ -38,6 +38,10 @@ public class BoardService {
 		return boardDAO.insertTest2(boardvo);
 	}
 
+	public Integer insertData(BoardVO vo) {
+		return boardDAO.insertData(vo);
+	}
+	
 	
 
 	
