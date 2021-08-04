@@ -19,14 +19,16 @@ public class BoardService {
 		System.out.println("selectTest");
 		List<BoardVO> list=boardDAO.selectTest();
 		System.out.println("list.size()="+list.size());
-		System.out.println("+++++"+toString());
+
 		
 		return list;
 	}
 
 
-	public int insertBoard(BoardVO boardVO) {
-		int count = boardDAO.insertBoard(boardVO);
+	
+
+	public int insertTest(BoardVO boardVO) {
+		int count = boardDAO.insertTest(boardVO);
 		System.out.println("count="+count);
 		return count;
 	}

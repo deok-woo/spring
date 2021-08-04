@@ -1,5 +1,6 @@
 package co.kr.swempire.web;
 
+import java.util.Date;
 import java.util.List;
 import javax.servlet.http.HttpServletRequest;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,22 +25,24 @@ public class BoardController {
 	
 		boardvo.getBoard_context();
 		
-		System.out.println("+++++"+toString());
-		
+		req.setAttribute("testList", list);
 		
 	
 		return "test";
 	}
 	
 	
-	@RequestMapping("insertBoard")
-	public String insertBoard(HttpServletRequest req) {
+	@RequestMapping("insertTest")
+	public String insertTest(HttpServletRequest req) {
 		
+		
+		int board_num = Integer.parseInt(req.getParameter("board_num"));
 		String id = req.getParameter("id");
 		String pw = req.getParameter("pw");
 		String user_name = req.getParameter("user_name");
 		String title = req.getParameter("title");
 		String board_context = req.getParameter("board_context");
+		//Date cre_date = req.getParameter("cre_date");
 		
 		BoardVO boardVO = new BoardVO();
 		boardVO.setId(id);
@@ -47,7 +50,7 @@ public class BoardController {
 		boardVO.setUser_name(user_name);
 		boardVO.setTitle(title);
 		boardVO.setBoard_context(board_context);
-		boardService.insertBoard(boardVO);
+		boardService.insertTest(boardVO);
 		
 		return "redirect:test";
 	}

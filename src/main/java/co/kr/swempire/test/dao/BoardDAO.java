@@ -12,7 +12,7 @@ public interface BoardDAO {
 
 	List<BoardVO> selectTest();
 
-	int insertBoard(BoardVO boardVO);
+	int insertTest(BoardVO boardVO);
 
 	
 	
