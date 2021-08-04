@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="co.kr.swempire.test.dao.BoardDAO">
+
+<select id="selectTest" resultType="co.kr.swempire.test.vo.BoardVO">
+	select * from board
+</select>
+
+<insert id="insertBoard" parameterType="co.kr.swempire.test.vo.BoardVO">
+	insert into board value(#{id},#{pw},#{user_name},#{title},#{board_context})
+</insert>
+
+
+</mapper>
