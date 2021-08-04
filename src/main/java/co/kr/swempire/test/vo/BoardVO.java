@@ -2,6 +2,8 @@ package co.kr.swempire.test.vo;
 
 import java.util.Date;
 
+import org.springframework.format.annotation.DateTimeFormat;
+
 public class BoardVO {
 	
 	int board_num;
@@ -10,6 +12,8 @@ public class BoardVO {
 	String user_name;
 	String title;
 	String board_context;
+	
+	@DateTimeFormat(pattern = "yyyy-MM-dd")
 	Date cre_date;
 	
 	public int getBoard_num() {

@@ -20,7 +20,7 @@ String cp = request.getContextPath();
 		<div class="wrap">
 			<header class="main-header">
 			<br>
-				<h1 class="header-title" style="position: relative; left: 16px">사용자 등록</h1>
+				<h1 class="header-title" style="position: relative; left: 16px">Insert</h1>
 			</header>
 			<br>
 			<div class="media-left" style="padding-right: 30px;">
@@ -69,7 +69,7 @@ String cp = request.getContextPath();
 				<span style="padding: 0px 35px">내용</span> 
 				<input 
 				type="text"
-				name="board_context" 
+				name="board_context"
 				class="form-control input-sm pull-right" 
 				maxlength="20"
 				>
