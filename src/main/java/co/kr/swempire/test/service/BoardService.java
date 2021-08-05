@@ -1,6 +1,7 @@
 package co.kr.swempire.test.service;
 
 import java.util.List;
+import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -42,6 +43,11 @@ public class BoardService {
 		return boardDAO.insertData(vo);
 	}
 	
+	public Map<String, Object> selectboard(BoardVO vo){
+		
+		return this.boardDAO.selectboard(vo);
+		
+	}
 	
 
 	

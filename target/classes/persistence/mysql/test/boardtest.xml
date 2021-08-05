@@ -22,7 +22,7 @@
 
 
 
-<select id="insertTest" parameterType="co.kr.swempire.test.vo.BoardVO">
+<select id="insertData" parameterType="co.kr.swempire.test.vo.BoardVO">
 		insert into
 		board (
 		id,
@@ -42,6 +42,24 @@
 		NOW()
 		)
 
+	</select>
+	
+	<select id="selectData" parameterType="co.kr.swempire.test.vo.BoardVO" resultType="int">
+		select * from board
+	</select>
+	
+	<select id = "selectboard" resultType="HashMap">
+	select
+	board_num,
+	id,
+	pw,
+	title,
+	board_context
+	from
+	board
+	where
+	board_num = #{board_num}
+	
 	</select>
 
 

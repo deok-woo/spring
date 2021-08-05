@@ -20,7 +20,7 @@ String cp = request.getContextPath();
 		<div class="wrap">
 			<header class="main-header">
 			<br>
-				<h1 class="header-title" style="position: relative; left: 16px">Insert</h1>
+				<h1 class="header-title" style="position: relative; left: 16px">Update</h1>
 			</header>
 			<br>
 			<div class="media-left" style="padding-right: 30px;">
