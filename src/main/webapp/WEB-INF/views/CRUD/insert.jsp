@@ -102,7 +102,7 @@ function insertData() {
 
 
 	
-	var f = document.form1;
+	var dat = document.form1;
 	if (!f.id.value) {
 
 		alert("id를 입력하세요");
@@ -137,7 +137,7 @@ function insertData() {
 
 	if (!f.board_context.value) {
 
-		alert("분류를 입력하세요");
+		alert("내용 입력하세요");
 		f.board_context.focus();
 		return;
 
@@ -148,14 +148,13 @@ function insertData() {
 
 	$
 			.ajax({
-				url : "${pageContext.request.contextPath}/admin/weaponpop/writeAjax.do",
+				url : "${pageContext.request.contextPath}/crud/insertAjaxs.do",
 				type : 'post',
 				dataType : 'json',
 				data : $('#form1').serialize(),
 				success : function(result) {
 					if (result.result) {
 						console.log(result);
-						//alert('건물 등록 완료');
 						alert(result.msg);
 						alert(result.result);
 						location.reload();
@@ -164,10 +163,8 @@ function insertData() {
 						alert('실패');
 					}
 				},
-				error : function(xhr, textStatus, errorThrown) { // Error
-					/* alert(xhr);
-					alert(textStatus);
-					alert(errorThrown); */
+				error : function(xhr, textStatus, errorThrown) { 
+
 					alert(result.msg);
 				}
 			});
